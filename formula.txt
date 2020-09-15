@@ -1,0 +1,6 @@
+Adder:
+	CarryIn = 0
+	For each bit:
+		Score <- ( A XOR B ) XOR CarryIn
+		CarryOut <- ( A SUM B ) OR ( CarryIn SUM ( A XOR B ) )
+		CarryIn = CarryOut
